@@ -4,10 +4,19 @@ import { Camera, Heart, Lock, Bell, Music, Droplet, Package, ArrowRight, Papercl
 export default function LuminaClone() {
   const [step, setStep] = useState('MAKER'); // MAKER, LOCKSCREEN, LETTER, BOARD
   const [formData, setFormData] = useState({
-    toName: 'My Love',
-    fromName: 'Me',
-    message: "I know I don't say it enough, so let me say it properly today: you are, hands down, the best part of my life. You turn the most ordinary days into something worth remembering — a random Tuesday feels a little more magical just because you're in it. Thank you for choosing me, again and again. Happy Girlfriend's Day! 💕",
-    photos: [null, null, null]
+    toName: 'Bub',
+    fromName: 'Vijay',
+    message: `I know I don't say it enough, so let me say it properly today: you are, hands down, the best part of my life. 
+      
+      You turn the most ordinary days into something worth remembering - a random day feels a little more magical just because you're in it. Your laugh is my favorite sound and your hugs are my favorite place.
+      Thank you for choosing me, again and again, even on the days I don't make it easy. I promise to keep choosing you right back — today, tomorrow, and every ordinary Tuesday after that.
+
+      Happy Girlfriend's Day, my love. You're stuck with me forever now. 💕`,
+      photos: [
+        "/1.jpeg", 
+        "/2.jpg", 
+        "/3.jpeg"
+      ]
   });
 
   const handlePhotoUpload = (index: number, e: any) => {
@@ -119,7 +128,7 @@ function LockscreenView({ onOpen }) {
       
       <div className="relative z-10 w-full p-6 pt-16 flex flex-col items-center h-full">
         <Lock className="w-5 h-5 text-white mb-2" />
-        <h1 className="text-6xl font-light text-white tracking-tight mb-2">5:00</h1>
+        <h1 className="text-6xl font-light text-white tracking-tight mb-2">11:11</h1>
         <p className="text-white/80 text-sm font-medium mb-12">Girlfriend's Day</p>
 
         <div className="w-full space-y-3 mt-auto mb-8">
@@ -178,7 +187,7 @@ function LetterView({ formData, onNext }) {
         </div>
         
         <div className="prose prose-pink text-gray-600 text-sm leading-relaxed mb-8">
-          <p>Dear {formData.toName},</p>
+          <p>Pyaari {formData.toName} 😉 ,</p>
           <p className="whitespace-pre-wrap">{formData.message}</p>
           <p className="font-medium">— {formData.fromName}</p>
         </div>
@@ -200,7 +209,7 @@ function BoardView({ formData, onReset }) {
     <div className="min-h-[100dvh] bg-[#fdfbf7] p-6 pb-24 relative">
       <div className="text-center pt-8 pb-4">
         <h2 className="text-2xl font-serif italic text-gray-800">every little moment, with you</h2>
-        <p className="text-gray-400 text-xs mt-1 uppercase tracking-widest">pinned, just for her</p>
+        <p className="text-gray-400 text-xs mt-1 uppercase tracking-widest">pinned</p>
       </div>
 
       <div className="relative mt-4 space-y-6">
