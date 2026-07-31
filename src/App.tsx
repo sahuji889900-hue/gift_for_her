@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Camera, Heart, Lock, Bell, Music, Droplet, Package, ArrowRight, Paperclip } from 'lucide-react';
 
 export default function LuminaClone() {
-  const [step, setStep] = useState('MAKER'); // MAKER, LOCKSCREEN, LETTER, BOARD
+  const [step, setStep] = useState('LOCKSCREEN'); // MAKER, LOCKSCREEN, LETTER, BOARD
   const [formData, setFormData] = useState({
     toName: 'Bub',
     fromName: 'Vijay',
