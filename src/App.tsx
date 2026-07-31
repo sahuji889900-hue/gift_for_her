@@ -14,7 +14,7 @@ export default function LuminaClone() {
       Happy Girlfriend's Day, my love. You're stuck with me forever now. 💕`,
       photos: [
         "/1.jpeg", 
-        "/2.jpg", 
+        "/2.jpeg", 
         "/3.jpeg"
       ]
   });
