@@ -6,10 +6,10 @@ export default function LuminaClone() {
   const [formData, setFormData] = useState({
     toName: 'Bub',
     fromName: 'Vijay',
-    message: `I know I don't say it enough, so let me say it properly today: you are, hands down, the best part of my life. 
+    message: `I know I don't say it enough, so let me say it properly today: u r the best part of my life. 
       
       You turn the most ordinary days into something worth remembering - a random day feels a little more magical just because you're in it. Your laugh is my favorite sound and your hugs are my favorite place.
-      Thank you for choosing me, again and again, even on the days I don't make it easy. I promise to keep choosing you right back — today, tomorrow, and every ordinary Tuesday after that.
+      Thank you for choosing me, again and again, even on the days I don't make it easy. I promise to keep choosing you right back — today, tomorrow, and every ordinary day after that.
 
       Happy Girlfriend's Day, my love. You're stuck with me forever now. 💕`,
       photos: [
@@ -252,12 +252,6 @@ function BoardView({ formData, onReset }) {
           <img src={getPhoto(2)} className="w-full h-56 object-cover rounded-sm" alt="Memory 3" />
           <p className="absolute bottom-2.5 left-0 right-0 text-center font-serif text-sm text-gray-700 italic">The Goal</p>
         </div>
-      </div>
-
-      <div className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md p-4 bg-gradient-to-t from-[#fdfbf7] via-[#fdfbf7] to-transparent z-50">
-        <button onClick={onReset} className="w-full bg-white border border-gray-200 text-gray-700 font-medium py-3.5 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2">
-          Start Over
-        </button>
       </div>
     </div>
   );
